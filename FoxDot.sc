@@ -49,7 +49,7 @@ FoxDot
 
 		MIDIClient.init;
 
-		midiout = MIDIOut(port);
+		midiout = MIDIOut(port, MIDIClient.destinations[port].uid);
 
 		OSCFunc(
 			{
